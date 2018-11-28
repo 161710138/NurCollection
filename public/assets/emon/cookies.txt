@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.vdo.ai	TRUE	/	FALSE	1999999999	__cfduid	d55771eddd3bfeb330d25384a27bf996e1543371760
+p.w3layouts.com	TRUE	/	FALSE	1999999999	PHPSESSID	06ivpt0khr92o58hnca326i872
+
