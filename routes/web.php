@@ -28,6 +28,9 @@ Route::get('/front', 'FrontendController@front');
 Route::get('/blog', 'FrontendController@blog');
 Route::get('/singleblog', 'FrontendController@singleblog');
 Route::get('/shop', 'FrontendController@shop');
+Route::get('/singleblog', 'FrontendController@singleblog');
+Route::get('/detailproduk', 'FrontendController@detailproduk');
+Route::get('/kontak', 'FrontendController@kontak');
 
 
 
@@ -51,4 +54,5 @@ Route::get('/contact', function () {
     return view('frontends.contact');
 });
 
+Route::get('/kategori_barang/{id}','FrontController@filter_barang');
 

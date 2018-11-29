@@ -13,8 +13,9 @@ class FrontendController extends Controller
 
     public function front()
     {
-    	$front = Galeris::all();
-    	return view('layouts.front', compact('front'));
+        $front = Galeris::all();
+        $barangs = Barangs::all();
+    	return view('layouts.front', compact('front','barangs'));
     }
     
     public function blog()
@@ -41,5 +42,21 @@ class FrontendController extends Controller
         return view('frontend.about', compact('about'));
     }
 
+    
+    public function detailproduk ()
+    {
+        $detailproduk = Barangs::all();
+        return view('frontend.detailproduk', compact('detailproduk'));
+    }
+    
+     
+    public function kontak ()
+    {
+        $kontak = Barangs::all();
+        return view('frontend.kontak', compact('kontak'));
+    }
+    
+    
+    
     
 }

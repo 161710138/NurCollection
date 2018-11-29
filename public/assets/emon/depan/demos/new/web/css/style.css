@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
 	font-family: 'Arimo', sans-serif;
-  	background: #fff;
+  	background: #FFFAFA;
 	margin:0;
 }
 body a{
@@ -35,7 +35,7 @@ ol.breadcrumb li.active{
 }
 /*-----start-header----*/
 .header{
-   background:url(../images/banner33.jpg) no-repeat 0px 0px;
+   background:url('../images/download.jpeg') no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

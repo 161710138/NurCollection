@@ -1,3 +1,4 @@
+
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -341,70 +342,50 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!--header//-->
 
 
-<div class="blog">
-	 <div class="container">
-		 <ol class="breadcrumb">
-		  <li><a href="/front">Home</a></li>
-		  <li class="active">Blog</li>
+<div class="contact-section-page">
+	   <div class="contact_top">					
+		   <div class="container">
+				<ol class="breadcrumb">
+		  <li><a href="index.html">Home</a></li>
+		  <li class="active">Contact</li>
 		 </ol>
-	 <h2>BLOG</h2>
-		
-
-	 <div class="col-md-9 fashion-blogs">
-		 <h3> <a href="blog-single.html">Donec vehicula</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Jackie</a> On<span> 08 Jan,2015</span> <a href="#">Comments(10)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b1.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p class="blog-info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="/singleblog">Read More</a>
-		
-		 <h3> <a href="blog-single.html">Fusce dignissim eget</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Hopper</a> On<span> 12 July,2015</span> <a href="#">Comments(2)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b2.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p class="blog-info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="blog-single.html">Read More</a>
-
-
-		 <h3> <a href="blog-single.html">Aenean ullamcorper</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Andrew</a> On<span> 5 Aug,2015</span> <a href="#">Comments(8)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b3.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p class="blog-info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="blog-single.html">Read More</a>
-		 
-		 <div class="none">
-		 <h3> <a href="blog-single.html">Etiam bibendum velit</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Willam</a> On<span> 23 Dec,2014</span> <a href="#">Comments(20)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b4.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="blog-single.html">Read More</a>
-		 </div>
+			  <div class="col-md-6 contact_left">
+			 		<h2>Contact Form</h2>
+			 		<p>Lorem ipsum dolor sit amet, adipiscing elit. Donec tincidunt dolor et tristique bibendum. Aenean sollicitudin vitae dolor ut posuere.</p>
+				  <form>
+					 <div class="form_details">
+						   <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"/>
+						   <input type="text" class="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}"/>
+							<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}"/>
+						
+							<textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+							<div class="clearfix"> </div>					   
+							<input name="submit" type="submit" value="Send message">
+					 </div>					 
+				  </form>
+			 </div>
+			 <div class="col-md-6 company-right">
+					<div class="contact-map">
+				    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1578265.0941403757!2d-98.9828708842255!3d39.41170802696131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1407515822047"> </iframe>
+				    </div>      
+				 <div class="company-right">
+					   <div class="company_ad">
+							<h3>Contact Info</h3>
+							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit velit justo.</span>
+			      			<address>
+								<p>email:<a href="mail-to_%20info%40example.html">info@display.com</a></p>
+								 <p>phone:  +255 55 55 777</p>
+								<p>28-7-169, 2nd Ave South</p>
+								<p>Saskabush, SK   S7M 1T6</p>									 	 	
+							</address>
+					  </div>
+				 </div>							
+			 </div>
+		  </div>
 	 </div>
-	 <div class="col-md-3 sidebar">
-		 <h3>CATEGORIES</h3>
-		  <ul>
-			 <li><a href="#"><span> </span>Trendy</a></li>
-			 <li><a href="#"><span> </span>Kurtas & kurtis</a></li>
-			 <li><a href="#"><span> </span>Fashion</a></li>
-			 <li><a href="#"><span> </span>Party</a></li>
-			 <li><a href="#"><span> </span>College</a></li>
-			 <li><a href="#"><span> </span>Summer</a></li>
-		 </ul>
-		 <h3 class="arch">BRANDS</h3>
-		 <ul>
-			 <li><a href="#"><span> </span>Roadster</a></li>
-			 <li><a href="#"><span> </span>Puma</a></li>
-			 <li><a href="#"><span> </span>Mango</a></li>					 		 
-	     </ul>
-		 <div class="subscribe">
-				<h4>Subscribe For News</h4>
-				<input type="text" placeholder="Email.." required="" />
-				<input type="submit" value="Subscribe" />
-			</div>
-		</div>
-		<div class="clearfix"></div>
-
-     </div>
-	 <div class="clearfix"> </div>
 </div>
+
+
 <!--fotter-->
 <div class="fotter-logo">
 	 <div class="container">
@@ -419,5 +400,5 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 </body>
 
-<!-- Mirrored from p.w3layouts.com/demos/new_fashions/web/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Nov 2018 02:24:32 GMT -->
+<!-- Mirrored from p.w3layouts.com/demos/new_fashions/web/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Nov 2018 02:24:45 GMT -->
 </html>

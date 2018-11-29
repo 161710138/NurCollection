@@ -26,7 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start menu -->
 <link href="{{asset('assets/emon/depan/demos/new/web/css/megamenu.css') }}" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="{{asset('assets/emon/depan/demos/new/web/js/megamenu.js') }}"></script>
-<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!-- <script>$(document).ready(function(){$(".megamenu").megamenu();});</script> -->
 <!-- start menu -->
 </head>
 <body>
@@ -55,7 +55,7 @@ if(typeof _bsa !== 'undefined' && _bsa) {
   	}
 })();
 </script><script>
-	(function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "../../../../vdo.ai/core/w3layouts/vdo.ai.js");
+	//  (function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "../../../../vdo.ai/core/w3layouts/vdo.ai.js");
 	</script><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125810435-1"></script>
 <script>
@@ -98,21 +98,28 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 <!---728x90--->
 
 <!---->
-<div class="features" id="features">
+@php
+ $barangs = App\Barangs::All();
+@endphp
+
+@yield('konteny')
 	 <div class="container">
 		 <div class="tabs-box">
 			<ul class="tabs-menu">
 				<li><a href="#tab1">Best seller</a></li>
 				<li><a href="#tab2">Popular</a></li>
 				<li><a href="#tab3">New Arrivals</a></li>
+				
 			</ul>
 			<div class="clearfix"> </div>
 		 <div class="tab-grids">
-			 <div id="tab1" class="tab-grid1">			   				  
-				 <a href="single.html"><div class="product-grid">					  
+			  <!-- body product -->
+			@foreach($barangs as $data)
+		 	<div id="tab1" class="tab-grid1">			   				  
+				 <a href="/detailproduk"><div class="product-grid">					  
 						<div class="more-product-info"><span>NEW</span></div>						
 						<div class="product-img b-link-stripe b-animate-go  thickbox">						   
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs1.jpg') }}" class="img-responsive" alt=""/>
+							<img src="{{ asset ('assets/img/barang/' .$data->gambar. '' ) }}" class="img-responsive" alt=""/>
 							<div class="b-wrapper">
 							<h4 class="b-animate b-from-left  b-delay03">							
 							<button class="btns">ORDER NOW</button>
@@ -121,382 +128,22 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						</div></a>						
 						<div class="product-info simpleCart_shelfItem">
 							<div class="product-info-cust">
-								<h4>BELLE B&W</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">
+								<br>
+								<h4>{{ $data->nama_barang }}</h4>
+								<br>
+								<span class="item_price">Rp.{{ $data->harga }}</span>
+							
 							</div>													
 							<div class="clearfix"> </div>
 						</div>
-					</div>			
-					
-					 <a href="single.html"><div class="product-grid">
-						 <div class="more-product-info"></div>						
-						 <div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs2.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						 </div>	</a>					
-						 <div class="product-info simpleCart_shelfItem">
-							 <div class="product-info-cust">
-								<h4>CLUBYORK</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							 </div>							 				
-							 <div class="clearfix"> </div>
-						 </div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs3.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>					
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>ROADSTER</h4>
-								<span class="item_price">$220.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>												
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs4.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>BLACKFLPS</h4>
-								<span class="item_price">$150.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>												
-							<div class="clearfix"> </div>
-						</div>
-					 </div>	
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"><span>NEW</span></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs5.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>					
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>RED CHECKS</h4>
-								<span class="item_price">$140.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">		
-							</div>														
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					<!---728x90--->
-
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs6.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEW LOOK</h4>
-								<span class="item_price">$100.00</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>												
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-			 </div>				
-				
-			 <div id="tab2" class="tab-grid2">
-				 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c1.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>													
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c2.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$120.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>												
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"><span>NEW</span></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c3.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>							
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>													
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"><span>NEW</span></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c4.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>														
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c5.jpg') }}"" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>							
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>													
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c6.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$180.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>													
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-			 </div>
-		 
-			 <div id="tab3" class="tab-grid3">
-				  <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs3.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>					
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>ROADSTER</h4>
-								<span class="item_price">$160.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>													
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs5.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>					
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>RED CHECKS</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>													
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c5.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>NEWLOOK</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">
-							</div>														
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c4.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>MANGO</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>												
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/c3.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div>	</a>					
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>SISLEY</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>												
-							<div class="clearfix"> </div>
-						</div>
-					 </div>
-					
-					 <a href="single.html"><div class="product-grid">
-						<div class="more-product-info"></div>						
-						<div class="product-img b-link-stripe b-animate-go  thickbox">
-							<img src="{{asset('assets/emon/depan/demos/new/web/images/bs1.jpg') }}" class="img-responsive" alt=""/>
-							<div class="b-wrapper">
-							<h4 class="b-animate b-from-left  b-delay03">							
-							<button class="btns">ORDER NOW</button>
-							</h4>
-							</div>
-						</div></a>						
-						<div class="product-info simpleCart_shelfItem">
-							<div class="product-info-cust">
-								<h4>ROADSTER</h4>
-								<span class="item_price">$187.95</span>
-								<input type="text" class="item_quantity" value="1" />
-								<input type="button" class="item_add" value="ADD">	
-							</div>						 						
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-				   <div class="clearfix"></div>					
-			 </div>
-		 </div>				
-		 </div>
+			</div>
+			@endforeach
+			<!-- body product end -->
+	</div>		
+</div>
+</div>
+</div>
+</div>
 			<!-- tabs-box -->
 			<!-- Comman-js-files -->
 			<script>

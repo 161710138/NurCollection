@@ -253,9 +253,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 					</div>
     				</div>
 				</li>
-				<li class="active"><a href="about.html">ABOUT US</a></li>
-			    <li class="grid"><a href="blog.html">BLOG</a></li>				
-				<li><a href="#">SHOP ONLINE</a>
+				<li class="active"><a href="/about">ABOUT US</a></li>
+			    <li class="grid"><a href="/blog ">BLOG</a></li>				
+				<li><a href="/shop">SHOP ONLINE</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -339,71 +339,104 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	 </div>
 </div>
 <!--header//-->
+<!--Single Page starts Here-->
 
 
-<div class="blog">
+<div class="product-main">
 	 <div class="container">
 		 <ol class="breadcrumb">
-		  <li><a href="/front">Home</a></li>
-		  <li class="active">Blog</li>
+		  <li><a href="index.html">Home</a></li>
+		  <li class="active">Single</li>
 		 </ol>
-	 <h2>BLOG</h2>
-		
+		 <div class="ctnt-bar cntnt">
+			 <div class="content-bar">
+				 <div class="single-page">					 
+					 <div class="details-left-slider">
+						<div class="flexslider">
+							        <!-- FlexSlider -->
+										<script src="{{asset('assets/emon/depan/demos/new/web/js/imagezoom.js') }}"></script>
+										  <script defer src="{{asset('assets/emon/depan/demos/new/web/js/jquery.flexslider.js') }}"></script>
+										<link rel="stylesheet" href="{{asset('assets/emon/depan/demos/new/web/css/flexslider.css') }}" type="text/css" media="screen" />
 
-	 <div class="col-md-9 fashion-blogs">
-		 <h3> <a href="blog-single.html">Donec vehicula</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Jackie</a> On<span> 08 Jan,2015</span> <a href="#">Comments(10)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b1.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p class="blog-info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="/singleblog">Read More</a>
-		
-		 <h3> <a href="blog-single.html">Fusce dignissim eget</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Hopper</a> On<span> 12 July,2015</span> <a href="#">Comments(2)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b2.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p class="blog-info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="blog-single.html">Read More</a>
+										<script>
+										// Can also be used with $(document).ready()
+										$(window).load(function() {
+										  $('.flexslider').flexslider({
+											animation: "slide",
+											controlNav: "thumbnails"
+										  });
+										});
+										</script>
+									
 
+							  <ul class="slides">
+								<li data-thumb="{{asset('assets/emon/depan/demos/new/web/images/s1.jpg') }}">
+									<div class="thumb-image"> <img src="{{asset('assets/emon/depan/demos/new/web/images/s1.jpg') }}" data-imagezoom="true" class="img-responsive"> </div>
+								</li>
+								<li data-thumb="{{asset('assets/emon/depan/demos/new/web/images/s2.jpg') }}">
+									 <div class="thumb-image"> <img src="{{asset('assets/emon/depan/demos/new/web/images/s2.jpg') }}" data-imagezoom="true" class="img-responsive"> </div>
+								</li>
+								<li data-thumb="{{asset('assets/emon/depan/demos/new/web/images/s3.jpg') }}">
+								   <div class="thumb-image"> <img src="{{asset('assets/emon/depan/demos/new/web/images/s3.jpg') }}" data-imagezoom="true" class="img-responsive"> </div>
+								</li>
+								<li data-thumb="{{asset('assets/emon/depan/demos/new/web/images/s4.jpg') }}">
+								   <div class="thumb-image"> <img src="{{asset('assets/emon/depan/demos/new/web/images/s4.jpg') }}" data-imagezoom="true" class="img-responsive"> </div>
+								</li>
+							  </ul>
+							<div class="clearfix"></div>
+						</div>
+					 </div>
+					 <div class="details-left-info">
+							<h3>Belle Fille Grey & Black</h3>
+								<h4>Pellentesque pretium </h4>							
+							<p>$ 180 <a href="#">Click for offer</a></p>
+							<p class="qty">Qty ::</p><input min="1" type="number" id="quantity" name="quantity" value="1" class="form-control input-small">
+							<div class="btn_form">
+								<a href="cart.html">Add to cart</a>
+							</div>
+							<div class="flower-type">
+							<p>Mobel  ::<a href="#">Dress</a></p>
+							<p>Brand  ::<a href="#">Pellentesque</a></p>
+							</div>
+							<h5>Description  ::</h5>
+							<p class="desc">Proin vestibulum scelerisque tempus. Phasellus at fermentum erat. Pellentesque mattis velit eget elit condimentum gravida. Donec vehicula mollis velit, a eleifend est hendrerit quis. Etiam pulvinar at ex eget cursus. Etiam luctus orci ut tortor rhoncus, sit amet faucibus lorem finibus. Nulla id ornare arcu. or lowest node and working upwards) are as follows:</p>
+					 </div>
+					 <div class="clearfix"></div>				 	
+				 </div>
+			 </div>
+		 </div>		 
+		 <div class="clearfix"></div>
+		 <!---728x90--->
 
-		 <h3> <a href="blog-single.html">Aenean ullamcorper</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Andrew</a> On<span> 5 Aug,2015</span> <a href="#">Comments(8)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b3.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p class="blog-info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="blog-single.html">Read More</a>
-		 
-		 <div class="none">
-		 <h3> <a href="blog-single.html">Etiam bibendum velit</a></h3>
-		 <p class="author">Posted By <a href="blog-single.html">Willam</a> On<span> 23 Dec,2014</span> <a href="#">Comments(20)</a></p>
-		 <a href="blog-single.html"><img src="{{asset('assets/emon/depan/demos/new/web/images/b4.jpg') }}" class="img-responsive" alt=""/></a>
-		 <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mattis metus in sem consequat aliquam. Quisque sed gravida dolor, at finibus quam. Duis quis velit tristique, aliquam ante vitae, volutpat arcu. Curabitur rutrum ligula nec odio dapibus pellentesque. Sed et nibh id nunc ullamcorper efficitur. Vestibulum vitae tortor pulvinar, varius magna a, aliquam diam. Nunc in augue purus. Quisque accumsan blandit tortor, eget semper leo. Duis accumsan felis ut ex porttitor, vel feugiat neque laoreet. Maecenas arcu nulla, finibus ullamcorper felis at, laoreet efficitur tellus.</p>
-		 <a class="read" href="blog-single.html">Read More</a>
-		 </div>
+		 <div class="single-bottom2">
+			 <h6>Related Products</h6>
+				<div class="rltd-posts">
+					 <div class="col-md-3 pst1">
+						 <img src="{{asset('assets/emon/depan/demos/new/web/images/ab3.jpg') }}" alt=""/>
+						 <h4><a href="products.html">NEWLOOK</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div>
+					 <div class="col-md-3 pst1">
+						 <img src="{{asset('assets/emon/depan/demos/new/web/images/c1.jpg') }}" alt=""/>
+						 <h4><a href="products.html">NEWLOOK</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div>
+					 <div class="col-md-3 pst1">
+						 <img src="{{asset('assets/emon/depan/demos/new/web/images/ab4.jpg') }}" alt=""/>
+						 <h4><a href="products.html">SAREES</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div>
+					 <div class="col-md-3 pst1">
+						 <img src="{{asset('assets/emon/depan/demos/new/web/images/c5.jpg') }}" alt=""/>
+						 <h4><a href="products.html">MANGO</a></h4>
+						 <a class="pst-crt" href="cart.html">ADD TO CART</a>
+					 </div>
+					 <div class="clearfix"></div>
+				</div>
+		 </div>	
+		 <!---728x90--->
+
 	 </div>
-	 <div class="col-md-3 sidebar">
-		 <h3>CATEGORIES</h3>
-		  <ul>
-			 <li><a href="#"><span> </span>Trendy</a></li>
-			 <li><a href="#"><span> </span>Kurtas & kurtis</a></li>
-			 <li><a href="#"><span> </span>Fashion</a></li>
-			 <li><a href="#"><span> </span>Party</a></li>
-			 <li><a href="#"><span> </span>College</a></li>
-			 <li><a href="#"><span> </span>Summer</a></li>
-		 </ul>
-		 <h3 class="arch">BRANDS</h3>
-		 <ul>
-			 <li><a href="#"><span> </span>Roadster</a></li>
-			 <li><a href="#"><span> </span>Puma</a></li>
-			 <li><a href="#"><span> </span>Mango</a></li>					 		 
-	     </ul>
-		 <div class="subscribe">
-				<h4>Subscribe For News</h4>
-				<input type="text" placeholder="Email.." required="" />
-				<input type="submit" value="Subscribe" />
-			</div>
-		</div>
-		<div class="clearfix"></div>
-
-     </div>
-	 <div class="clearfix"> </div>
 </div>
 <!--fotter-->
 <div class="fotter-logo">
@@ -419,5 +452,5 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 </body>
 
-<!-- Mirrored from p.w3layouts.com/demos/new_fashions/web/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Nov 2018 02:24:32 GMT -->
+<!-- Mirrored from p.w3layouts.com/demos/new_fashions/web/single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Nov 2018 02:24:44 GMT -->
 </html>
